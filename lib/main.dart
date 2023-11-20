@@ -5,15 +5,15 @@ void main() {
     MaterialApp(
         home: Scaffold(
           appBar: AppBar(
-              title: Center(
-                  child: Text("To do", style: TextStyle(color: Colors.black))),
+              title: const Center(
+                  child: Text("To do", style: TextStyle(color: Colors.black)
+                  ),
+                ),
               backgroundColor: Colors.yellow),
-          body: Text(
-              "- each lists that are crossed out are your small wins, and small wins makes you believe in yoursel -"),
+          body: const Text(
+              "- each lists that are crossed out are your small wins, and small wins makes you believe in yourself -"),
           backgroundColor: Colors.white,
-          floatingActionButton: FloatingActionButton(
-            child: Text('add'),
-          ),
-        )),
+        )
+      ),
   );
 }
