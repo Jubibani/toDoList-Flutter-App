@@ -5,14 +5,26 @@ void main() {
     MaterialApp(
         home: Scaffold(
           appBar: AppBar(
+              backgroundColor:const Color.fromARGB(75, 57, 239, 100),
+
               title: const Center(
-                  child: Text("To do", style: TextStyle(color: Colors.black)
+                  child: Text(
+                    "To do", 
+                    style: TextStyle(color: Colors.white)
                   ),
                 ),
-              backgroundColor: Colors.yellow),
-          body: const Text(
-              "- each lists that are crossed out are your small wins, and small wins makes you believe in yourself -"),
-          backgroundColor: Colors.white,
+
+              ),
+
+          body: Container(
+            child: const Center(
+              child: 
+                Text(
+                  "Just Do it", 
+                  style:TextStyle(color: Colors.black)
+                  ),
+            ),
+          ),
         )
       ),
   );
