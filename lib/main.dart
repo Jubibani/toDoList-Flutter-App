@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyWidget());
@@ -17,7 +18,12 @@ class MyWidget extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.indigo[500],
           title: const Center(
-            child: Text("My List", style: TextStyle(color: Colors.white)),
+            child: Text(
+              "My List", 
+              style: TextStyle(
+                color: Colors.white,
+                ),
+              ),
           ),
         ),
         body: Center(
@@ -31,25 +37,26 @@ class MyWidget extends StatelessWidget {
                   shape: BoxShape.rectangle,
                   color: Colors.indigo[300],
                   borderRadius: BorderRadius.circular(10.0)),
+              margin: const EdgeInsets.all(10.0),
               height: 500.0,
               width: 350.0,
             ),
           ]),
         ),
-        floatingActionButton: 
-          FloatingActionButton(
-            onPressed: () {
-              debugPrint('pressedFloatingActionButton');
-            },
-            child: const Icon(Icons.add),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            debugPrint('pressedFloatingActionButton');
+          },
+          child: const Icon(Icons.add),
           backgroundColor: Colors.indigo[500],
-          ),
+        ),
         bottomNavigationBar: NavigationBar(
           destinations: const [
-          NavigationDestination(icon: Icon(Icons.settings), label: "settings"),
-           NavigationDestination(icon: Icon(Icons.person), label: "profile"),
+            NavigationDestination(
+                icon: Icon(Icons.settings), label: "settings"),
+            NavigationDestination(icon: Icon(Icons.person), label: "profile"),
           ],
-        backgroundColor: Colors.indigo[500],
+          backgroundColor: Colors.indigo[500],
         ),
       ),
     );
