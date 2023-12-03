@@ -1,15 +1,14 @@
 // ignore_for_file: avoid_print, sort_child_properties_last
 
 import 'package:firstly/pages/HomePage.dart';
-import 'package:firstly/utilities/TodoTile.dart';
-import 'package:firstly/utilities/DialogBox.dart';
+import 'package:firstly/utilities/todo_tile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const myApp());
+  runApp(const MyApp());
 }
-class myApp extends StatelessWidget {
-  const myApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
